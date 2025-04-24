@@ -15,62 +15,59 @@
         .jogador img {
             width: 200px;
             height: auto;
-            border-radius: 10px;
+            border-radius: 12px;
         }
-        .jogador button {
-            margin-top: 10px;
-            padding: 5px 10px;
+        .jogador p {
+            margin: 10px 0 5px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>Gatos do Atlético Mineiro - 2025</h1>
-    
+    <h1>Gato do Brasileirão 2025 - Atlético Mineiro</h1>
+
     <div id="jogadores">
-        <!-- Jogadores do Atlético -->
-        <!-- Substitua os nomes das imagens conforme os arquivos enviados -->
-        <!-- Exemplo de jogador -->
-        <!-- <div class="jogador">
-            <img src="images/alan_franco.jpg" alt="Alan Franco">
-            <p>Alan Franco</p>
-            <button>Votar</button>
-        </div> -->
-
-        <!-- Copie e cole o bloco acima para cada jogador abaixo -->
-
-        <!-- Lista gerada automaticamente -->
-        <!-- Começo da lista -->
-        <div class="jogador"><img src="images/alan_franco.jpg" alt="Alan Franco"><p>Alan Franco</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/alonso.jpg" alt="Alonso"><p>Alonso</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/bernard.jpg" alt="Bernard"><p>Bernard</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/cadu.jpg" alt="Cadu"><p>Cadu</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/caio.jpg" alt="Caio"><p>Caio</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/caio_maia.jpg" alt="Caio Maia"><p>Caio Maia</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/everson.jpg" alt="Everson"><p>Everson</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/fausto_vera.jpg" alt="Fausto Vera"><p>Fausto Vera</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/gabriel_atila.jpg" alt="Gabriel Átila"><p>Gabriel Átila</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/gabriel_delfim.jpg" alt="Gabriel Delfim"><p>Gabriel Delfim</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/gabriel_menino.jpg" alt="Gabriel Menino"><p>Gabriel Menino</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/guilherme_arana.jpg" alt="Guilherme Arana"><p>Guilherme Arana</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/gustavo_scarpa.jpg" alt="Gustavo Scarpa"><p>Gustavo Scarpa</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/hulk.jpg" alt="Hulk"><p>Hulk</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/igor_gomes.jpg" alt="Igor Gomes"><p>Igor Gomes</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/igor_rabello.jpg" alt="Igor Rabello"><p>Igor Rabello</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/ivan_roman.jpg" alt="Ivan Roman"><p>Ivan Roman</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/joao_marcelo.jpg" alt="João Marcelo"><p>João Marcelo</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/junior_santos.jpg" alt="Júnior Santos"><p>Júnior Santos</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/lyanco.jpg" alt="Lyanco"><p>Lyanco</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/natanael.jpg" alt="Natanael"><p>Natanael</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/palacios.jpg" alt="Palacios"><p>Palacios</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/patrick.jpg" alt="Patrick"><p>Patrick</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/robert_alves.jpg" alt="Robert Alves"><p>Robert Alves</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/romulo.jpg" alt="Rômulo"><p>Rômulo</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/rony.jpg" alt="Rony"><p>Rony</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/rubens_dias.jpg" alt="Rubens Dias"><p>Rubens Dias</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/saravia.jpg" alt="Saravia"><p>Saravia</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/tomas_cuello.jpg" alt="Tomás Cuello"><p>Tomás Cuello</p><button>Votar</button></div>
-        <div class="jogador"><img src="images/vitor_hugo.jpg" alt="Vitor Hugo"><p>Vitor Hugo</p><button>Votar</button></div>
-        <!-- Fim da lista -->
+        <!-- Jogadores -->
+        <!-- Cada bloco abaixo representa um jogador -->
+        <!-- Substituirá automaticamente os nomes e imagens -->
+        <!-- Início dos jogadores -->
+        <div class="jogador"><img src="images/alan_franco.jpg"><p>Alan Franco</p><button onclick="votar('alan_franco')">Votar</button></div>
+        <div class="jogador"><img src="images/alonso.jpg"><p>Alonso</p><button onclick="votar('alonso')">Votar</button></div>
+        <div class="jogador"><img src="images/bernard.jpg"><p>Bernard</p><button onclick="votar('bernard')">Votar</button></div>
+        <div class="jogador"><img src="images/cadu.jpg"><p>Cadu</p><button onclick="votar('cadu')">Votar</button></div>
+        <div class="jogador"><img src="images/caio.jpg"><p>Caio</p><button onclick="votar('caio')">Votar</button></div>
+        <div class="jogador"><img src="images/caio_maia.jpg"><p>Caio Maia</p><button onclick="votar('caio_maia')">Votar</button></div>
+        <div class="jogador"><img src="images/everson.jpg"><p>Everson</p><button onclick="votar('everson')">Votar</button></div>
+        <div class="jogador"><img src="images/fausto_vera.jpg"><p>Fausto Vera</p><button onclick="votar('fausto_vera')">Votar</button></div>
+        <div class="jogador"><img src="images/gabriel_atila.jpg"><p>Gabriel Átila</p><button onclick="votar('gabriel_atila')">Votar</button></div>
+        <div class="jogador"><img src="images/gabriel_delfim.jpg"><p>Gabriel Delfim</p><button onclick="votar('gabriel_delfim')">Votar</button></div>
+        <div class="jogador"><img src="images/gabriel_menino.jpg"><p>Gabriel Menino</p><button onclick="votar('gabriel_menino')">Votar</button></div>
+        <div class="jogador"><img src="images/guilherme_arana.jpg"><p>Guilherme Arana</p><button onclick="votar('guilherme_arana')">Votar</button></div>
+        <div class="jogador"><img src="images/gustavo_scarpa.jpg"><p>Gustavo Scarpa</p><button onclick="votar('gustavo_scarpa')">Votar</button></div>
+        <div class="jogador"><img src="images/hulk.jpg"><p>Hulk</p><button onclick="votar('hulk')">Votar</button></div>
+        <div class="jogador"><img src="images/igor_gomes.jpg"><p>Igor Gomes</p><button onclick="votar('igor_gomes')">Votar</button></div>
+        <div class="jogador"><img src="images/igor_rabello.jpg"><p>Igor Rabello</p><button onclick="votar('igor_rabello')">Votar</button></div>
+        <div class="jogador"><img src="images/ivan_roman.jpg"><p>Ivan Roman</p><button onclick="votar('ivan_roman')">Votar</button></div>
+        <div class="jogador"><img src="images/joao_marcelo.jpg"><p>João Marcelo</p><button onclick="votar('joao_marcelo')">Votar</button></div>
+        <div class="jogador"><img src="images/junior_santos.jpg"><p>Junior Santos</p><button onclick="votar('junior_santos')">Votar</button></div>
+        <div class="jogador"><img src="images/lyanco.jpg"><p>Lyanco</p><button onclick="votar('lyanco')">Votar</button></div>
+        <div class="jogador"><img src="images/natanael.jpg"><p>Natanael</p><button onclick="votar('natanael')">Votar</button></div>
+        <div class="jogador"><img src="images/palacios.jpg"><p>Palacios</p><button onclick="votar('palacios')">Votar</button></div>
+        <div class="jogador"><img src="images/patrick.jpg"><p>Patrick</p><button onclick="votar('patrick')">Votar</button></div>
+        <div class="jogador"><img src="images/robert_alves.jpg"><p>Robert Alves</p><button onclick="votar('robert_alves')">Votar</button></div>
+        <div class="jogador"><img src="images/romulo.jpg"><p>Rômulo</p><button onclick="votar('romulo')">Votar</button></div>
+        <div class="jogador"><img src="images/rony.jpg"><p>Rony</p><button onclick="votar('rony')">Votar</button></div>
+        <div class="jogador"><img src="images/rubens_dias.jpg"><p>Rubens Dias</p><button onclick="votar('rubens_dias')">Votar</button></div>
+        <div class="jogador"><img src="images/saravia.jpg"><p>Saravia</p><button onclick="votar('saravia')">Votar</button></div>
+        <div class="jogador"><img src="images/tomas_cuello.jpg"><p>Tomas Cuello</p><button onclick="votar('tomas_cuello')">Votar</button></div>
+        <div class="jogador"><img src="images/vitor_hugo.jpg"><p>Vitor Hugo</p><button onclick="votar('vitor_hugo')">Votar</button></div>
     </div>
+
+    <script>
+        function votar(jogador) {
+            alert("Você votou em " + jogador + "!");
+            // Aqui vai o envio do voto para backend no futuro
+        }
+    </script>
 </body>
 </html>
